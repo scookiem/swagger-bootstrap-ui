@@ -1,4 +1,4 @@
-/***房联专版
+/***
  * swagger-bootstrap-ui v1.9.5 / 2019-7-28 14:53:45
  *
  * Gitee:https://gitee.com/xiaoym/swagger-bootstrap-ui
@@ -702,8 +702,7 @@
                 type:"get",
                 dataType:"json",
                 async:false,
-                success:function (datas) {
-                    var data=datas.data.list;
+                success:function (data) {
                     that.log("请求成功");
                     that.log(data);
                     var t=typeof(data);
@@ -874,8 +873,7 @@
                     dataType:"json",
                     type:"get",
                     async:async,
-                    success:function (datas) {
-                        var data=datas.data;
+                    success:function (data) {
                         that.hasLoad=true;
                         //var menu=JSON.parse(data);
                         that.log("success")
@@ -4978,8 +4976,8 @@
         that.log(new Date().toTimeString());
 
     }
-
-
+    
+    
     function deepSchemaModel(model, arrs,id) {
         $.each(arrs,function (i, arr) {
             if(arr.id==id){
@@ -6573,7 +6571,7 @@
         this.method="";
         this.count=0;
     }
-
+    
     /***
      * 返回对象解析属性
      * @constructor
